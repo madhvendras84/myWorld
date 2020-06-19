@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans|Nunito:400,600,700&display=swap");
+
+/* Default Colors */
+$bgcolor: #fff;
+$primary-color: #ffa500;
+$secondry-color: #333;
+$light-black: #666;
+$text-white: #fff;
+
+/* Social Button Icon Styling Colors */
+$facebook-color: #3b5998;
+$twitter-color: #55acee;
+$google-color: #dd4b39;
+$linkedin-color: #0976b4;
+$pinterest-color: #cb2027;
+$github-color: #4183c4;
+$youtube-color: #bb0000;
+
+$nunito-sans: "Nunito Sans", sans-serif;
+$nunito: "Nunito", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: $nunito;
+  background-color: $bgcolor;
+}
+/* Global wrapper */
+#global {
+  position: relative;
+  /* Header styling */
+  header {
+    nav#mw-menu-bar {
+      margin: 0;
+      padding: 0;
+
+      div#navbarSupportedContent ul {
+        margin: 0 auto;
+      }
+
+      li a.nav-link {
+        padding: 25px 5px;
+        margin: 0 5px;
+      }
+      li:hover a.nav-link,
+      li.nav-item.active a,
+      .dropdown-menu.show {
+        background: #ffa500;
+        color: #fff !important;
+      }
+    }
+    .social-buttons {
+      display: inline-block;
+      background: rgba(256, 256, 256, 0.5);
+      border-radius: 10px;
+      text-align: center;
+
+      .social-margin {
+        margin-right: 10px;
+      }
+
+      a,
+      a:hover,
+      a:focus,
+      a:active {
+        text-decoration: none;
+      }
+
+      .social-icon {
+        border-radius: 50%;
+        border: 5px solid;
+        text-align: center;
+        width: 25px;
+        height: 25px;
+        display: inline-block;
+        line-height: 1px;
+        transition: all 0.5s;
+        &:hover {
+          transform: rotate(360deg) scale(1.3);
+        }
+        /* Facebook Button Styling */
+        &.facebook {
+          font-size: 16px;
+          border-color: $facebook-color;
+          background-color: $facebook-color;
+          color: #ffffff;
+          &:hover {
+            background-color: #ffffff;
+            color: $facebook-color;
+          }
+        }
+        /* Twitter Button Styling */
+        &.twitter {
+          font-size: 16px;
+          padding-left: 2px;
+          border-color: $twitter-color;
+          background-color: $twitter-color;
+          color: #ffffff;
+          &:hover {
+            background-color: #ffffff;
+            color: $twitter-color;
+          }
+        }
+        /* Google+ Button Styling */
+        &.google-plus {
+          font-size: 16px;
+          padding-left: 2px;
+          background-color: $google-color;
+          color: #ffffff;
+          border-color: $google-color;
+          &:hover {
+            background-color: #ffffff;
+            color: $google-color;
+          }
+        }
+        /* Linkedin Button Styling */
+        &.linkedin {
+          font-size: 16px;
+          padding-left: 1px;
+          background-color: $linkedin-color;
+          color: #ffffff;
+          border-color: $linkedin-color;
+          &:hover {
+            background-color: #ffffff;
+            color: $linkedin-color;
+          }
+        }
+        /* Pinterest Button Styling */
+        &.pinterest {
+          font-size: 16px;
+          background-color: $pinterest-color;
+          color: #ffffff;
+          border-color: $pinterest-color;
+          &:hover {
+            background-color: #ffffff;
+            color: $pinterest-color;
+          }
+        }
+        /* Github Button Styling */
+        &.github {
+          font-size: 16px;
+          background-color: $github-color;
+          color: #ffffff;
+          border-color: $github-color;
+          &:hover {
+            background-color: #ffffff;
+            color: $github-color;
+          }
+        }
+        /* Youtube Button Styling */
+        &.youtube {
+          font-size: 16px;
+          padding-left: 0px;
+          background-color: $youtube-color;
+          color: #ffffff;
+          border-color: $youtube-color;
+          &:hover {
+            background-color: #ffffff;
+            color: $youtube-color;
+          }
+        }
+      }
+    }
+  }
+  /* slider styling */
+  div#main-hero {
+    div#slide-info {
+      background: #00000078;
+      display: inline-block;
+      width: 500px;
+      height: 250px;
+      padding: 25px;
+      position: absolute;
+      top: 30%;
+      right: 0;
+      left: 15% !important;
+      bottom: unset;
+    }
+    h1 {
+      font-weight: 700;
+      font-size: 32px;
+      margin: 20px 0 0 20px;
+    }
+    a.cta-btn {
+      margin-top: 30px !important;
+      background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
+      border-radius: 40px;
+      color: #00a84f;
+      display: block;
+      font-size: 14px;
+      font-weight: 700;
+      height: 45px;
+      letter-spacing: 1px;
+      margin: 0 auto;
+      padding: 4px;
+      position: relative;
+      text-decoration: none;
+      text-transform: uppercase;
+      width: 200px;
+      z-index: 2;
+
+      &:hover {
+        color: #fff;
+        text-decoration: none;
+      }
+      span {
+        align-items: center;
+        background: #e7e8e9;
+        border-radius: 40px;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        transition: background 0.5s ease;
+        width: 100%;
+      }
+
+      &:hover span {
+        background: transparent;
+      }
+    }
+  }
+}
+
+/* Responsiveness check */
+@media (max-width: 992px) {
+  .social-buttons {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) {
+  header.mooc {
+    position: fixed;
+    top: 10px;
+    left: 0;
+    z-index: 99;
+    background: #fff;
+    width: 100%;
+  }
+}
