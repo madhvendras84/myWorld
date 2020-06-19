@@ -22,6 +22,7 @@ body {
   position: relative;
   /* Header styling */
   /* slider styling */
+  /* Gallery styling */
 }
 
 #global header nav#mw-menu-bar {
@@ -239,6 +240,44 @@ body {
 
 #global div#main-hero a.cta-btn:hover span {
   background: transparent;
+}
+
+#global .gallery h2 {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+#global .gallery .row > div {
+  padding: 0 4px !important;
+}
+
+#global .gallery img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+#global .gallery img:hover {
+  border: 1px solid gray;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#global footer {
+  background: gray;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#global footer p {
+  color: #fff;
+  margin: 0;
+  font-size: 14px;
 }
 
 /* Responsiveness check */

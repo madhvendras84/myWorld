@@ -227,6 +227,38 @@ body {
       }
     }
   }
+  /* Gallery styling */
+  .gallery {
+      h2{
+        font-weight: 700;
+        font-size: 32px;
+      }
+    .row > div {
+      padding: 0 4px !important;
+    }
+    img {
+      margin-top: 8px;
+      vertical-align: middle;
+    }
+    img:hover {
+        border: 1px solid gray;
+        padding: 5px;
+        border-radius: 5px;
+      }
+  }
+  footer {
+    background: gray;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    p {
+      color: $text-white;
+      margin: 0;
+      font-size: 14px;
+    }
+  }
 }
 
 /* Responsiveness check */
